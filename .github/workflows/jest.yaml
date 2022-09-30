@@ -24,7 +24,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
-      - run: npm ci
+      - run: npm install
       - run: npx prisma generate
       - run: npx prisma migrate deploy
       - run: npm run test
