@@ -36,7 +36,6 @@ jobs:
       - run: npx prisma generate
       - run: npx prisma migrate deploy
       - run: npm run test
-
   build:
     needs: [test]
     runs-on: ubuntu-latest
